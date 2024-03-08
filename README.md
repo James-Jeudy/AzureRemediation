@@ -54,17 +54,7 @@ Go to private endpoints connections and create one:
 ![Create private endpoint for storage account final step](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/291c791f-9b6d-4da3-9e58-e934a4596680)
 ![Completed Deployment for storage account private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ff4c0f7c-874a-48d9-8652-ad71f9bdf559)
 
-## Confirming Private Links are configuring properly for Storage Account & Key Vault:
-
-
-
-
-
-
-
-
-
-
+## Confirming Private Links are configured properly for Storage Account & Key Vault:
 
 
 Retrieving IP Address to remote into Windows VM:
