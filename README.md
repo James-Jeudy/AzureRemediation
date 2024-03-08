@@ -5,6 +5,10 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
+
+
+
+
 ## Implementing Azure Private Link for Key Vault Steps:
 
 Go to Azure Key Vault:
