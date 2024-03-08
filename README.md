@@ -1,4 +1,4 @@
-# Azure Remediation (NIST 800-53 & Microsoft Cloud Security Benchmark)
+# Azure Remediation(NIST 800-53 & Microsoft Cloud Security Benchmark)
 
 ## Introduction
 In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, associating subnets with a network security group, & enabling MFA. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project in which I built a SOC/Honeynet in Azure.
