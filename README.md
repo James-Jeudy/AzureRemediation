@@ -86,11 +86,10 @@ Go to Virtual networks and select your V-Net:
 
 Go to Subnets & select default:
 ![Subnet settings vnet](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/f978fa70-2b84-4790-a1b6-b62bc3bdbded)
-
 Add the network security group:
 ![Configured network security group](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/1f25e8ac-f62e-40c7-9662-32b8d6209ca5)
 
-Adding multiple owners to subscriptions:
+## Adding multiple owners to subscriptions:
 ![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
 
 Manual Remediation Steps & Unhealthy Resource:
