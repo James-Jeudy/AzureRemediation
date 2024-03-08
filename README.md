@@ -1,8 +1,9 @@
-# Azure Remediation
+# Azure Remediation(NIST 800-53 & Microsoft Cloud Security Benchmark)
 
 ## Introduction
-In this project, I implemented some NIST 800-53 and Microsoft Cloud Security Benchmark Recommendations to harden our environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, & associating subnets with a network security group. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project in which I built a SOC/Honeynet in Azure.
+In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, associating subnets with a network security group, & enabling MFA. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project in which I built a SOC/Honeynet in Azure.
 
+![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
 ## Implementing Azure Private Link for Key Vault Steps:
 
@@ -13,6 +14,9 @@ Go to Azure Key Vault:
 After accessing the key vault, go to Networking:
 
 ![Go to networking](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a2b4f560-b245-4171-be99-1724f21368af)
+
+
+
 
 In firewalls & virtual networks, make sure public access is disabled & Allow Trusted Microsoft services to bypass this firewall is enabled:
 ![Switch to disable public access, allow trusted microsoft services to bypass this firewall then click apply](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/b83b2090-843b-4b96-9fc0-9b387ded382b)
@@ -26,10 +30,14 @@ Afterwards, create the private endpoint connections:
 ![Create private link azure key vault](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4f8f888f-892e-464c-93ab-81e84327de29)
 ![Your deployment is complete endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3260fc23-5a27-49f1-9b58-65f193539537)
 
+
+
 ## Implementing Azure Private Link for Storage Account Steps:
 
 Go to Storage accounts:
 ![Enable Private Link Storage Account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/22e9411b-9c91-4550-b15f-29250d4542ca)
+
+
 
 Make sure configuration settings are set up properly:
 ![Enable private link storage account 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/69ffb0f7-8285-4233-b9e8-969e14816627)
@@ -81,35 +89,58 @@ Go to Subnets & select default:
 Add the network security group:
 ![Configured network security group](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/1f25e8ac-f62e-40c7-9662-32b8d6209ca5)
 
+Adding multiple owners to subscriptions:
+![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
+
+Manual Remediation Steps & Unhealthy Resource:
+![Adding more than one owner to subscription account 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/cfe40775-ec56-45d7-9dbb-8667bcd72077)
+
+Go to IAM & Add Role Assignment:
+![Add role assignment Azure](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa979bd5-eca2-4e7d-adda-66af8d9c730c)
+
+Go to Privileged administrator roles and click Owner:
+![Add user to owner role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/607a6584-aba3-4181-92b3-25a31c6cb4b1)
+
+Add Assignment:
+![Add another assignment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ad57b2e3-a8e4-4d51-8675-2572c1829d11)
+
+Add Members:
+![Adding another user](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/95f96fb3-80c3-461f-9ee5-ac5150d28c7f)
+
+![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
+
+## Enabling MFA per user in Azure:
+![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
+
+Go to All Users and then Per-user MFA:
+![Go to per user mfa](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6eb78518-b097-43b7-8e94-b82a16e1f857)
+
+Bulk update all the users and then click Enable. This may take multiple attempts to enable for all users:
+![Pick every user   bulk update to enable](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/80eeff04-0422-4a95-bff9-69aa8460d0e5)
+
+![Enable MFA for all users](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a94c2054-41b3-4a4b-a6d4-6d61cc9db1cd)
+
+![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
+
+## Deploying Azure Firewall on a V-Net:
+![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6732eade-fcef-46d6-a989-bf928948dc2e)
+
+Go to configure Azure Firewall:
+![Configure Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7a83f5ac-bdd9-41aa-a62f-364928dd48b3)
+
+![Creating Azure Firewall Part One](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/5ed1ce66-9abf-4769-9e1f-5163348ca64e)
+![Creating Azure Firewall Part Two](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3493f7b4-e1d4-4992-968c-10396da150d1)
+![Azure Firewall Deployment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/69f38156-00e3-48d8-b308-23eeb4be73a0)
+![RGCyberlab Deploy Firewall Success](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a0c720d1-d9a9-4bb3-b2db-88131edcc603)
+![Successful Deployment of Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/021ee83d-53e5-4326-93c7-0c0271594b52)
 
 
 
 
 
+![Secure Score   Recommendations](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d1fd7f01-24cc-4ead-a47f-c077e7493b91)
 
 
-
-
-
-
-Vulnerable Windows 10 Machine with Malicious Software Installed:
-![Vulnerable Windows Virtual Machine](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/59df9074-f883-41da-bf4f-1a225679ae78)
-
-## Scanning & Reporting:
-Adding Vulnerable Windows 10 Machine via Private IP Address to OpenVAS for unauthenticated scan:
-![Adding Windows 10 Machine to OpenVAS for uncredentialed scan](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/2a360f5a-d87b-4c59-9ddb-b10aa19d2306)
-
-Unauthenticated Scan Vulnerabilities:
-![Uncredentialed Scan Vulnerabilities](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/f3b9547d-bf85-4408-97e4-92664ff3a807)
-
-After running the unauthenticated scan, I decided to setup a credentialed scan on the machine shown here:
-![Credentialed Scan Setup](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/7bb7d1eb-49fb-4a0e-b87c-c1726f35b4b5)
-
-Here are the results of the credentialed scan, It picked up a lot of vulnerabilities in comparison to the unauthenticated scan:
-![Credentialed Scan 2](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/6f5d66e8-9a2f-4ca8-a22d-880fdb91b719)
-
-After the scan returned the results, I decided to uninstall the malicious software from the Windows 10 Machine. These were the results afterwards:
-![Cleaned up Credential Scan](https://github.com/James-Jeudy/OpenVAS_Vulnerability-Management/assets/160562010/4c3c5807-dd02-472b-bcd6-665767188cc5)
 
 ## Conclusion:
-This project was a great learning experience as it gave me exposure to OpenVAS, & more exposure to Azure. The OpenVAS & Windows 10 machines were both configured in Azure. I was able to make use of tools to help improve my knowledge and continue the great journey of learning cybersecurity. The tools in this project taught me how to effectively scan, confirm, and remediate vulnerabilities on a machine. Overall, this was a great introduction to Vulnerability Management. 
+
