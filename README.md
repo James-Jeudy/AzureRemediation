@@ -65,7 +65,25 @@ Go to Endpoints under the storage account section and then retrieve the primary 
 Run an nslookup command on the storage account to make sure it returns a Private IP Address:
 ![Nslookup for storage account resolves to Private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d28398d3-7cfc-470c-a523-b0a832817701)
 
-## 
+## Adding a network security group to a Subnet:
+
+Create Network Security Groups:
+![Create network security group to attach to subnet](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/406ae0db-addd-4214-9872-6187b6380341)
+
+![Create network security group to add to subnet 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/c27b447c-72e0-4e10-8ccd-ba731edf93f5)
+
+Go to Virtual networks and select your V-Net:
+![Go to V-net to add subnet](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/971629f7-3a92-40cf-9457-875199aa36bb)
+
+Go to Subnets & select default:
+![Subnet settings vnet](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/f978fa70-2b84-4790-a1b6-b62bc3bdbded)
+
+Add the network security group:
+![Configured network security group](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/1f25e8ac-f62e-40c7-9662-32b8d6209ca5)
+
+
+
+
 
 
 
