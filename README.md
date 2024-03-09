@@ -8,9 +8,10 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 
 
+<img src="https://github.com/James-Jeudy/AzureRemediation/assets/160562010/c39461e2-2e22-4e2b-95f1-5e0e4d2ef28c.type" width="100" height="100">
 
 
-
+![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/c39461e2-2e22-4e2b-95f1-5e0e4d2ef28c)
 
 
 
