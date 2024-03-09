@@ -82,16 +82,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Completed Deployment for storage account private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ff4c0f7c-874a-48d9-8652-ad71f9bdf559)
 
 
-
-
-
-
-
-
-
-
-
-
 ## Confirm Private Links are configured properly for Storage Account & Key Vault:
 
 
@@ -113,9 +103,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 5. Run an nslookup command on the storage account to make sure it returns a Private IP Address:
 ![Nslookup for storage account resolves to Private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d28398d3-7cfc-470c-a523-b0a832817701)
-
-
-
 
 
 ## Adding multiple owners to subscriptions:
@@ -142,8 +129,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
 
-
-
 ## Enabling MFA per user in Azure:
 <h3>
 1. Enable MFA per-user:
@@ -159,7 +144,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 4. Confirm all users are enabled:
 
 ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
-
 
 ## Post-Implementation:
 
