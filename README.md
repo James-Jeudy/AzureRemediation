@@ -111,7 +111,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 5. Add Assignment:
 ![Add another assignment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ad57b2e3-a8e4-4d51-8675-2572c1829d11)
 
-6. Add Members to Role:
+6. Add Members to Role, Review & Assign:
 ![Adding another user](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/95f96fb3-80c3-461f-9ee5-ac5150d28c7f)
 
 ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
