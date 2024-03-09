@@ -9,7 +9,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 
 
-## Implementing Azure Private Link for Key Vault Steps:
+## Implementing Azure Private Link for Key Vault:
 
 Go to Azure Key Vault:
 
