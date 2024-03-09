@@ -124,8 +124,13 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
 
+
+
 ## Enabling MFA per user in Azure:
-<h3>1. ![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
+<h3>
+1. Enable MFA per-user:
+    
+![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
 
 2. Go to All Users and then Per-user MFA:
 ![Go to per user mfa](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6eb78518-b097-43b7-8e94-b82a16e1f857)
@@ -133,17 +138,22 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 3. Bulk update all the users and then click Enable. This may take multiple attempts to enable for all users:
 ![Pick every user   bulk update to enable](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/80eeff04-0422-4a95-bff9-69aa8460d0e5)
 
-4. ![Enable MFA for all users](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a94c2054-41b3-4a4b-a6d4-6d61cc9db1cd)
+4. Confirm all users are enabled:
 
-5. ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
+![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
 
 ## Deploying Azure Firewall on a V-Net:
-<h3>1. ![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6732eade-fcef-46d6-a989-bf928948dc2e)
+<h3>
+1. Configure Azure Firewall Settings:
+
+![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7bc7f4b2-687b-4ae7-89c9-d96be90f44bd)
+
 
 2. Go to configure Azure Firewall:
 ![Configure Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7a83f5ac-bdd9-41aa-a62f-364928dd48b3)
 
-3. ![Creating Azure Firewall Part One](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/5ed1ce66-9abf-4769-9e1f-5163348ca64e)
+3. Create Azure Firewall following these steps:
+![Creating Azure Firewall Part One](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/5ed1ce66-9abf-4769-9e1f-5163348ca64e)
 ![Creating Azure Firewall Part Two](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3493f7b4-e1d4-4992-968c-10396da150d1)
 ![Azure Firewall Deployment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/69f38156-00e3-48d8-b308-23eeb4be73a0)
 ![RGCyberlab Deploy Firewall Success](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a0c720d1-d9a9-4bb3-b2db-88131edcc603)
