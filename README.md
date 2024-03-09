@@ -60,11 +60,23 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 4. Go to private endpoints connections and create one, following the steps listed below:
 ![Create private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/b0a25a45-2935-41ed-bdaa-0aa28e2fe0ae)
+
+5. Confirm basics section
 ![Create private endpoint part one](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/824c224a-df95-4888-827f-c062f7572df3)
+
+6. Confirm resources section and make sure target sub-resource is set to Blob:
 ![Make sure to block blob storage](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/77f9d77a-bfb7-483d-b6e3-6becf329c3be)
+
+7. Confirm virtual network section:
 ![Fine to leave as is and then click Next](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7e63df79-ef25-4f7c-9a76-0d8514b1002f)
+
+8. Confirm DNS section:
 ![Just make sure subscription and Resource group are accurate](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/2ab18b33-d64b-4dd3-8a90-042f240e0ebd)
+
+9. Review & Create:
 ![Create private endpoint for storage account final step](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/291c791f-9b6d-4da3-9e58-e934a4596680)
+
+10. The private link for storage account should now be deployed:
 ![Completed Deployment for storage account private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ff4c0f7c-874a-48d9-8652-ad71f9bdf559)
 
 
