@@ -1,7 +1,7 @@
 # Azure Remediation(NIST 800-53 & Microsoft Cloud Security Benchmark)
 
 ## Introduction
-In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, enabling MFA, and adding another owner to my Azure subscription. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure). This project will show a walkthrough for each of these implementations which should help anyone harden their Azure environment. 
+In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes configuring Azure private link for Key Vault & Storage Instances, enabling MFA, and adding another owner to my Azure subscription. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure). This project will show a walkthrough for each of these implementations which should help anyone harden their Azure environment. 
 
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
@@ -134,30 +134,17 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
 
-## Deploying Azure Firewall on a V-Net:
-<h3>
-1. Configure Azure Firewall Settings:
-
-![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7bc7f4b2-687b-4ae7-89c9-d96be90f44bd)
-
-
-2. Go to configure Azure Firewall:
-![Configure Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7a83f5ac-bdd9-41aa-a62f-364928dd48b3)
-
-3. Create Azure Firewall following these steps:
-![Creating Azure Firewall Part One](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/5ed1ce66-9abf-4769-9e1f-5163348ca64e)
-![Creating Azure Firewall Part Two](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3493f7b4-e1d4-4992-968c-10396da150d1)
-![Azure Firewall Deployment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/69f38156-00e3-48d8-b308-23eeb4be73a0)
-![RGCyberlab Deploy Firewall Success](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/a0c720d1-d9a9-4bb3-b2db-88131edcc603)
-![Successful Deployment of Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/021ee83d-53e5-4326-93c7-0c0271594b52)
-
-
-
-
-
-![Secure Score   Recommendations](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d1fd7f01-24cc-4ead-a47f-c077e7493b91)
-
-
 
 ## Conclusion:
 
+In conclusion, the private endpoint for Azure Key Vault & Storage Accounts took both items off of the public internet and makes it accessible only within our subnets & virtual networks. The firewall was also enabled for both Key Vault & storage accounts, whic disabled public access from the Internet.
+
+Adding multiple owners to our subscription account incresed our security score as well as it's highly recommended to have at least three owners as this significantly reduces the chance for a breach by a compromised owner account. 
+
+Lastly, enabling MFA also protects against a breach, as users tend to use weak passwords or reuse them for multiple services. With MFA enabled, accounts are more secure and users and authenticate with almost any application via Single Sign-On (SSO). 
+
+Overall, this project was a great introduction to NIST 800-53 controls and the Microsoft Cloud Security Benchmark. It taught me multiple ways to harden my SOC environment in Azure, and gave me some practical remediation skills that I can utilize at a cloud security/SOC position. 
+
+Here is my Cloud Security Benchmark score after the remediations:
+
+![Secure Score   Recommendations](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d1fd7f01-24cc-4ead-a47f-c077e7493b91)
