@@ -78,7 +78,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 2. Copy the Key Vault URL:
 ![Grab Azure Key Vault URL](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/873b341c-d423-4c18-86e7-813184dc84f3)
 
-3. Run an nslookup command on the Azure Key Vault URL:
+3. Run an nslookup command on the Azure Key Vault URL to make sure it returns a Private IP Address:
 
 ![NSLookup Key Vault Cyberlab results private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/77f8d427-73c4-41a6-9a20-b169f55cb020)
 
