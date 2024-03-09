@@ -74,6 +74,8 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Just make sure subscription and Resource group are accurate](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/2ab18b33-d64b-4dd3-8a90-042f240e0ebd)
 
 9. Review & Create:
+
+
 ![Create private endpoint for storage account final step](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/291c791f-9b6d-4da3-9e58-e934a4596680)
 
 10. The private link for storage account should now be deployed:
