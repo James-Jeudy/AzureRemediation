@@ -61,7 +61,7 @@ Go to private endpoints connections and create one:
 ## Confirming Private Links are configured properly for Storage Account & Key Vault:
 
 
-Retrieving IP Address to remote into Windows VM:
+Retrieve IP Address to remote into Windows VM:
 ![Remote into Windows VM to test private links](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8e5dc660-151f-4f77-be69-581c62d5761a)
 
 Copy the Key Vault URL:
