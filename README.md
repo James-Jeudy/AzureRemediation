@@ -1,7 +1,7 @@
 # Azure Remediation(NIST 800-53 & Microsoft Cloud Security Benchmark)
 
 ## Introduction
-In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment in Microsoft Azure. This included configuring Azure private link for Key Vault & Storage Instances, enabling MFA, and adding another owner to my Azure subscription. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations & adding NIST 800-53. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure). This project will show a walkthrough for each of these implementations which should help anyone harden their Azure environment. 
+In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment in Microsoft Azure. The implementations included configuring Azure private links for Key Vault & Storage Instances, enabling MFA, and adding another owner to my Azure subscription. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%; it would go up to about 77% after the implementations & adding NIST 800-53. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure). This project will show a walkthrough for each of these implementations, which should help anyone harden their Azure environment. 
 
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
@@ -137,13 +137,13 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ## Post-Implementation:
 
-In conclusion, private endpoint for Azure Key Vault & Storage Accounts enabled me to take them off of the public internet and makes it accessible only within our subnets & virtual networks. The firewall was also enabled for both Key Vault & storage accounts, which disabled public access from the Internet.
+In conclusion, the private endpoint for Azure Key Vault and Storage Accounts enabled me to remove them from the public Internet and make them accessible only within our subnets and virtual networks. The firewall is enabled for both Key Vault and storage accounts, which disables public access from the Internet.
 
-Adding multiple owners to our subscription account increased our security score as well as it's highly recommended to have at least three owners as this significantly reduces the chance for a breach by a compromised owner account. 
+Adding multiple owners to our subscription account increased our security score. It's highly recommended that we have at least three owners, as this significantly reduces the chance of a breach by a compromised owner account. 
 
-Lastly, enabling MFA also protects against a breach, as users tend to use weak passwords or reuse them for multiple services. With MFA enabled, accounts are more secure and users can authenticate with almost any application via Single Sign-On (SSO). 
+Lastly, enabling MFA protects against a breach, as users sometimes use weak passwords or reuse them for multiple services. With MFA enabled, accounts are more secure, and users can authenticate almost any application via Single Sign-On (SSO). 
 
-Overall, this project was a great introduction to NIST 800-53 controls and the Microsoft Cloud Security Benchmark. It taught me multiple ways to harden my SOC environment in Azure, and gave me some practical remediation skills that I can utilize at a cloud security/SOC position. 
+This project was a great introduction to NIST 800-53 controls and the Microsoft Cloud Security Benchmark. It taught me multiple ways to harden my SOC environment in Microsoft Azure and gave me some practical remediation skills that I can utilize in a cloud security/SOC position. 
 
 Here is my Cloud Security Benchmark score after implementing the remediations and adding NIST 800-53 to my Azure environment.:
 
