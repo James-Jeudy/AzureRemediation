@@ -9,6 +9,11 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 
 
+
+
+
+
+
 ## Implementing Azure Private Link for Key Vault:
 
 <h3> 1. Go to Azure Key Vault:
@@ -25,7 +30,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 3. In firewalls & virtual networks, make sure public access is disabled & Allow Trusted Microsoft services to bypass this firewall is enabled & apply changes:
 ![Switch to disable public access, allow trusted microsoft services to bypass this firewall then click apply](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/b83b2090-843b-4b96-9fc0-9b387ded382b)
 
-4. Afterwards, create the private endpoint connections:
+4. Afterwards, create the private endpoint connections, following these steps:
 ![Create private endpoint connections](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/48f05a9c-6d92-438b-9825-298b6e3081a0)
 ![Create private endpoint connection 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/055f6501-9ffd-4e2e-b932-9424c13ff4ed)
 ![Create private endpoint connection 3](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/841b7928-4388-4651-9a4d-a324ce73fc49)
@@ -38,9 +43,9 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ## Implementing Azure Private Link for Storage Account Steps:
 
-<h3>1. Go to Storage accounts:
-![Enable Private Link Storage Account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/22e9411b-9c91-4550-b15f-29250d4542ca)
+<h3> 1. Go to Storage Accounts:
 
+![Enable Private Link Storage Account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/bef05660-873d-40b5-be9e-7d5de976e89d)
 
 
 2. Make sure configuration settings are set up properly:
@@ -49,7 +54,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 3. Afterwards, go to Networking & make sure Public network access is disabled and then save:
 ![Go to networking then disable public network access](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/67131073-05f6-4aab-bb77-74850f090213)
 
-4. Go to private endpoints connections and create one:
+4. Go to private endpoints connections and create one, following the steps listed below:
 ![Create private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/b0a25a45-2935-41ed-bdaa-0aa28e2fe0ae)
 ![Create private endpoint part one](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/824c224a-df95-4888-827f-c062f7572df3)
 ![Make sure to block blob storage](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/77f9d77a-bfb7-483d-b6e3-6becf329c3be)
@@ -58,10 +63,24 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Create private endpoint for storage account final step](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/291c791f-9b6d-4da3-9e58-e934a4596680)
 ![Completed Deployment for storage account private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ff4c0f7c-874a-48d9-8652-ad71f9bdf559)
 
-## Confirming Private Links are configured properly for Storage Account & Key Vault:
 
 
-<h3>1. Retrieve IP Address to remote into Windows VM:
+
+
+
+
+
+
+
+
+
+## Confirm Private Links are configured properly for Storage Account & Key Vault:
+
+
+<h3>  1. Retrieve IP Address to remote into Windows VM:
+
+    
+    
 ![Remote into Windows VM to test private links](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8e5dc660-151f-4f77-be69-581c62d5761a)
 
 2. Copy the Key Vault URL:
@@ -69,7 +88,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 3. Run an nslookup command on the Azure Key Vault URL:
 
-![Run NSLookup of KeyVault Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/f83d0a13-33cf-43cc-ba2b-66e0a48cf95e)
 ![NSLookup Key Vault Cyberlab results private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/77f8d427-73c4-41a6-9a20-b169f55cb020)
 
 4. Go to Endpoints under the storage account section and then retrieve the primary endpoint name for blob service:
@@ -78,8 +96,16 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 5. Run an nslookup command on the storage account to make sure it returns a Private IP Address:
 ![Nslookup for storage account resolves to Private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d28398d3-7cfc-470c-a523-b0a832817701)
 
+
+
+
+
 ## Adding multiple owners to subscriptions:
-<h3>1. ![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
+<h3>
+    
+1. Assign more than one owner to Azure subscription.
+  
+![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
 
 2. Manual Remediation Steps & Unhealthy Resource:
 ![Adding more than one owner to subscription account 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/cfe40775-ec56-45d7-9dbb-8667bcd72077)
@@ -93,10 +119,10 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 5. Add Assignment:
 ![Add another assignment](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ad57b2e3-a8e4-4d51-8675-2572c1829d11)
 
-6. Add Members:
+6. Add Members to Role:
 ![Adding another user](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/95f96fb3-80c3-461f-9ee5-ac5150d28c7f)
 
-7. ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
+![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
 
 ## Enabling MFA per user in Azure:
 <h3>1. ![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
