@@ -135,7 +135,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
 
 
-## Conclusion:
+## Post-Implementation:
 
 In conclusion, private endpoint for Azure Key Vault & Storage Accounts enabled me to take them off of the public internet and makes it accessible only within our subnets & virtual networks. The firewall was also enabled for both Key Vault & storage accounts, which disabled public access from the Internet.
 
