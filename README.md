@@ -6,10 +6,6 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
 
-![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/c39461e2-2e22-4e2b-95f1-5e0e4d2ef28c)
-
-
-
 ## Implementing Azure Private Link for Key Vault:
 
 <h3> 1. Go to Azure Key Vault:
