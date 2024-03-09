@@ -38,7 +38,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ## Implementing Azure Private Link for Storage Account Steps:
 
-1. Go to Storage accounts:
+<h3>1. Go to Storage accounts:
 ![Enable Private Link Storage Account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/22e9411b-9c91-4550-b15f-29250d4542ca)
 
 
@@ -61,7 +61,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ## Confirming Private Links are configured properly for Storage Account & Key Vault:
 
 
-1. Retrieve IP Address to remote into Windows VM:
+<h3>1. Retrieve IP Address to remote into Windows VM:
 ![Remote into Windows VM to test private links](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8e5dc660-151f-4f77-be69-581c62d5761a)
 
 2. Copy the Key Vault URL:
@@ -79,7 +79,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 ![Nslookup for storage account resolves to Private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d28398d3-7cfc-470c-a523-b0a832817701)
 
 ## Adding multiple owners to subscriptions:
-1. ![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
+<h3>1. ![Adding more than one owner to subscription account](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4c2f4d20-e922-4810-a7bf-97ef3762784b)
 
 2. Manual Remediation Steps & Unhealthy Resource:
 ![Adding more than one owner to subscription account 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/cfe40775-ec56-45d7-9dbb-8667bcd72077)
@@ -99,7 +99,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 7. ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
 
 ## Enabling MFA per user in Azure:
-1. ![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
+<h3>1. ![Enable MFA part 1](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ebf2a0bc-3c20-42d3-bb5e-a42d827dd774)
 
 2. Go to All Users and then Per-user MFA:
 ![Go to per user mfa](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6eb78518-b097-43b7-8e94-b82a16e1f857)
@@ -112,7 +112,7 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 5. ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
 
 ## Deploying Azure Firewall on a V-Net:
-1. ![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6732eade-fcef-46d6-a989-bf928948dc2e)
+<h3>1. ![Configure Firewall Settings](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/6732eade-fcef-46d6-a989-bf928948dc2e)
 
 2. Go to configure Azure Firewall:
 ![Configure Azure Firewall](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/7a83f5ac-bdd9-41aa-a62f-364928dd48b3)
