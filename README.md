@@ -145,6 +145,6 @@ Lastly, enabling MFA also protects against a breach, as users tend to use weak p
 
 Overall, this project was a great introduction to NIST 800-53 controls and the Microsoft Cloud Security Benchmark. It taught me multiple ways to harden my SOC environment in Azure, and gave me some practical remediation skills that I can utilize at a cloud security/SOC position. 
 
-Here is my Cloud Security Benchmark score after the remediations:
+Here is my Cloud Security Benchmark score after implementing the remediations and adding NIST 800-53 to my Azure environment.:
 
 ![Secure Score   Recommendations](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d1fd7f01-24cc-4ead-a47f-c077e7493b91)
