@@ -137,11 +137,11 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ## Conclusion:
 
-In conclusion, the private endpoint for Azure Key Vault & Storage Accounts took both items off of the public internet and makes it accessible only within our subnets & virtual networks. The firewall was also enabled for both Key Vault & storage accounts, whic disabled public access from the Internet.
+In conclusion, private endpoint for Azure Key Vault & Storage Accounts enabled me to take them off of the public internet and makes it accessible only within our subnets & virtual networks. The firewall was also enabled for both Key Vault & storage accounts, which disabled public access from the Internet.
 
-Adding multiple owners to our subscription account incresed our security score as well as it's highly recommended to have at least three owners as this significantly reduces the chance for a breach by a compromised owner account. 
+Adding multiple owners to our subscription account increased our security score as well as it's highly recommended to have at least three owners as this significantly reduces the chance for a breach by a compromised owner account. 
 
-Lastly, enabling MFA also protects against a breach, as users tend to use weak passwords or reuse them for multiple services. With MFA enabled, accounts are more secure and users and authenticate with almost any application via Single Sign-On (SSO). 
+Lastly, enabling MFA also protects against a breach, as users tend to use weak passwords or reuse them for multiple services. With MFA enabled, accounts are more secure and users can authenticate with almost any application via Single Sign-On (SSO). 
 
 Overall, this project was a great introduction to NIST 800-53 controls and the Microsoft Cloud Security Benchmark. It taught me multiple ways to harden my SOC environment in Azure, and gave me some practical remediation skills that I can utilize at a cloud security/SOC position. 
 
