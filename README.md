@@ -1,7 +1,7 @@
 # Azure Remediation(NIST 800-53 & Microsoft Cloud Security Benchmark)
 
 ## Introduction
-In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, and enabling MFA. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure).
+In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Security Benchmark Recommendations to harden my SOC environment. This includes implementing Azure Firewall, configuring Azure private link for Key Vault & Storage Instances, enabling MFA, and adding another owner to my Azure subscription. After setting up the SOC environment in Azure initially, our Cloud Security Benchmark Score was only about 41%, it would go up to about 77% after the implementations. This project is related to my other project, [Creating a Live SOC/Honeynet in Azure ](https://github.com/James-Jeudy/SOC-Honeynet-Azure). This project will show a walkthrough for each of these implementations which should help anyone harden their Azure environment. 
 
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
