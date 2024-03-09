@@ -24,11 +24,23 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 4. Afterwards, create the private endpoint connections, following these steps:
 ![Create private endpoint connections](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/48f05a9c-6d92-438b-9825-298b6e3081a0)
+
+5. Confirm basics section and then click next:
 ![Create private endpoint connection 2](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/055f6501-9ffd-4e2e-b932-9424c13ff4ed)
+
+6. Confirm resources section and then click next: 
 ![Create private endpoint connection 3](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/841b7928-4388-4651-9a4d-a324ce73fc49)
+
+7. Confirm virtual network section and then click next:
 ![Create private endpoint connection 4](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/2d258152-2a2e-49ed-926f-e0b8f5c66c57)
+
+8. Confirm DNS section and then click next:
 ![create private endpoint connection DNS](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3ebaafc5-ab63-40a1-ad60-0e29c07f9d50)
+
+9. Once settings are confirmed, click review and create.
 ![Create private link azure key vault](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/4f8f888f-892e-464c-93ab-81e84327de29)
+
+10. The Private Link should now be deployed for Key Vault:
 ![Your deployment is complete endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3260fc23-5a27-49f1-9b58-65f193539537)
 
 
