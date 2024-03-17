@@ -5,6 +5,9 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Nist 800-53 Picture](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/aa2029d1-58bb-4ea2-a3fb-223786d49525)
 
+<br>
+
+<br>
 
 ## Implementing Azure Private Link for Key Vault:
 
@@ -43,7 +46,9 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 10. The Private Link should now be deployed for Key Vault:
 ![Your deployment is complete endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/3260fc23-5a27-49f1-9b58-65f193539537)
 
+<br>
 
+<br>
 
 ## Implementing Azure Private Link for Storage Account:
 
@@ -81,6 +86,9 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 10. The private link for storage account should now be deployed:
 ![Completed Deployment for storage account private endpoint](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/ff4c0f7c-874a-48d9-8652-ad71f9bdf559)
 
+<br>
+
+<br>
 
 ## Confirm Private Links are configured properly for Storage Account & Key Vault:
 
@@ -104,6 +112,9 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 5. Run an nslookup command on the storage account to make sure it returns a Private IP Address:
 ![Nslookup for storage account resolves to Private IP Address](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/d28398d3-7cfc-470c-a523-b0a832817701)
 
+<br>
+
+<br>
 
 ## Adding multiple owners to subscriptions:
 <h3>
@@ -129,6 +140,10 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 
 ![Review   Assign Role](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/742b886f-054f-4117-a186-b61dc6edf5c3)
 
+<br>
+
+<br>
+
 ## Enabling MFA per user in Azure:
 <h3>
 1. Enable MFA per-user:
@@ -144,6 +159,11 @@ In this project, I implemented some NIST 800-53 controls and Microsoft Cloud Sec
 4. Confirm all users are enabled:
 
 ![Afterwards MFA should now be enabled](https://github.com/James-Jeudy/AzureRemediation/assets/160562010/8a0270e7-ba74-44f2-a622-9c808976858c)
+
+<br>
+
+<br>
+
 
 ## Post-Implementation:
 
